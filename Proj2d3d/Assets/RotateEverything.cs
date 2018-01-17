@@ -8,12 +8,15 @@ public class RotateEverything : MonoBehaviour {
 
 	void Update () {
 		if (Input.GetKey (KeyCode.Q)) {
-			transform.Rotate (0, 1, 0);
+			Vector3 variable = transform.forward;
+			variable = new Vector3 (variable.x + 1f, variable.y, variable.z);
+			transform.forward = variable;
 
 		}
 		if (Input.GetKey (KeyCode.E)) {
-			transform.Rotate (0, -1, 0);
-		//	transform.rotation = Quaternion.LookRotation(new Vector3(0,0,transform.GetChild(0).GetComponent<Movement>().speed));
+			Vector3 variable = transform.forward;
+			variable = new Vector3 (variable.x - 1f, variable.y, variable.z);
+			transform.forward = variable;
 		}
 	}
 

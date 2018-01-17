@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 70364023}
   - component: {fileID: 70364022}
   - component: {fileID: 70364025}
+  - component: {fileID: 70364026}
   m_Layer: 0
   m_Name: PlayerHitbox
   m_TagString: Untagged
@@ -197,6 +198,17 @@ MonoBehaviour:
   Jumpcount: 4
   jump: 4
   jumpSpeed: 2
+--- !u!114 &70364026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 70364020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0878f8cd2af84a04194815f49f3da4b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &93664574
 GameObject:
   m_ObjectHideFlags: 0
@@ -4034,7 +4046,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2120031423}
-  - component: {fileID: 2120031424}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -4056,17 +4067,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2120031424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2120031422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0878f8cd2af84a04194815f49f3da4b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2142695475
 GameObject:
   m_ObjectHideFlags: 0
